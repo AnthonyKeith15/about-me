@@ -1,0 +1,9 @@
+h1 {
+  font-size: 9rem;
+}
+ul li {
+  list-style-type: disc;
+}
+ol li {
+  list-style: decimal;
+}
