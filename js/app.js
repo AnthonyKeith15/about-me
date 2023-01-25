@@ -64,7 +64,7 @@ if (animeGuess === 'yes' || animeGuess === 'y') {
 }
 
 let magicNumber = Math.ceil(Math.random() * 20);
-console.log(magicNumber);
+//console.log(magicNumber);
 for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
   let userNumberGuess = prompt('Choose a number between 1-20');
   let userGuessInt = +userNumberGuess;
@@ -88,7 +88,7 @@ let attempts = 6;
 let isCorrect = false;
 while (attempts > 0 && isCorrect === false) {
   if (attempts === 0) {
-    alert('Sorry Out of guesses!')
+    alert('Sorry Out of guesses!');
     break;
   }
   let userCountryGuess = prompt('Which foreign country have I visited?').toLowerCase();
