@@ -80,7 +80,7 @@ for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
   if (guessesRemaining === 0) {
     alert(`Sorry Out Of Guesses, the correct number was ${magicNumber}`);
     break;
-  };
+  }
 }
 
 const correctAnswersArr = ['japan', 'korea', 'thailand'];
@@ -91,9 +91,9 @@ while (attempts > 0 && isCorrect === false) {
     alert('Sorry Out of guesses!')
     break;
   }
-  let userCountryGuess = prompt('Which foreign country have I visited?');
+  let userCountryGuess = prompt('Which foreign country have I visited?').toLowerCase();
   for (let j = 0; j < correctAnswersArr.length; j++) {
-    if (userCountryGuess.toLowerCase() === correctAnswersArr[j]) {
+    if (userCountryGuess === correctAnswersArr[j]) {
       alert('Correct!');
       isCorrect = true;
       correctAnswers++;
@@ -105,6 +105,7 @@ while (attempts > 0 && isCorrect === false) {
     alert(`You have ${attempts} attempts left!`);
   }
 }
+alert('The countries I have been to are ' + correctAnswersArr[0]+ ", " + correctAnswersArr[1]+ ", and " + correctAnswersArr[2]);
 
 if (correctAnswers === 1) {
   alert('Congratulations ' + username + ', you got 1 correct!');
@@ -117,13 +118,4 @@ if (correctAnswers === 1) {
 /*
 To Do List:
 Create Array To hold Questions and Answers (Optional)
-Add 6th Question 'Please Guess a Number'
-Indicate Through Alert if guess is too high or too low
-Give use FOUR chances to guess the correct answer
-Tell User correct number after four guesses
-Add a 7th question that has multiple possible correct answers
-Give the user SIX attempts to guess
-Display All Correct Answers
-Calculate Final Score
-Display Final Score
 */
