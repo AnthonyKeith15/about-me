@@ -17,7 +17,7 @@ My motivation has always come from having over the top goals! Communication has 
 
 As a user I've always enjoyed when website experiences are interactive. The goal was to make it feel like talking to a friend who remembered something small about you. Subtle but impactful. 
 
-IMAGE OF QUOTE INSPIRATION
+Inspirational Quote 
 ![Inspirational quote in front of forrest](img/Inspirational%20Quote%20Picture.png)
 [SOURCE](https://www.brainyquote.com/quotes/ted_turner_384962)
 
