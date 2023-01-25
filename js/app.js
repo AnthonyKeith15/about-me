@@ -84,31 +84,34 @@ for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
 }
 
 const correctAnswersArr = ['japan', 'korea', 'thailand'];
-let attempts = 7;
-while (attempts > 0) {
+let attempts = 6;
+let isCorrect = false;
+while (attempts > 0 && isCorrect === false) {
+  if (attempts === 0) {
+    alert('Sorry Out of guesses!')
+    break;
+  }
   let userCountryGuess = prompt('Which foreign country have I visited?');
-  attempts--;
   for (let j = 0; j < correctAnswersArr.length; j++) {
     if (userCountryGuess.toLowerCase() === correctAnswersArr[j]) {
       alert('Correct!');
+      isCorrect = true;
       correctAnswers++;
-      break;
-    } else { 
-      if (attempts === 0) {
-        alert('Sorry Out of guesses!');
-        break;
-      }
-      alert(`Try Again! You have ${attempts} attempts left!`);
       break;
     }
   }
+  attempts--;
+  if (isCorrect === false) {
+    alert(`You have ${attempts} attempts left!`);
+  }
 }
+
 if (correctAnswers === 1) {
   alert('Congratulations ' + username + ', you got 1 correct!');
 } else if (correctAnswers === 0) {
   alert('Sorry, ' + username + ' you got none right :(');
 } else {
-  alert(`Congragulations ${username}! You got ${correctAnswers} correct answers!`);
+  alert(`Congragulations ${username}! You got ${correctAnswers} out of 7 correct answers!`);
 }
 
 /*
