@@ -12,10 +12,15 @@ Step 1. Initialize a variable to store the number of correct answers.
 Step 2. When the user gets a correct answer, add one to the variable we created! 
 ![Picture of counter in if statement](img/Counter%20Increase%20Example.png "Counter Example")
 
-LIGHTHOUSE SCORE
-![Lighthouse Score](img/Lighthouse%20Score.png "Lighthouse Score")
+## Motivation
+My motivation has always come from having over the top goals! Communication has never been something I've been good at; in order to improve I'm challenging myself to write clean documentation. 
+
+As a user I've always enjoyed when website experiences are interactive. The goal was to make it feel like talking to a friend who remembered something small about you. Subtle but impactful. 
 
 IMAGE OF QUOTE INSPIRATION
 ![Inspirational quote in front of forrest](img/Inspirational%20Quote%20Picture.png)
 [SOURCE](https://www.brainyquote.com/quotes/ted_turner_384962)
+
+LIGHTHOUSE SCORE
+![Lighthouse Score](img/Lighthouse%20Score.png "Lighthouse Score")
 
