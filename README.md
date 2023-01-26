@@ -17,10 +17,15 @@ My motivation has always come from having over the top goals! Communication has 
 
 As a user I've always enjoyed when website experiences are interactive. The goal was to make it feel like talking to a friend who remembered something small about you. Subtle but impactful. 
 
+
+
 Inspirational Quote 
 ![Inspirational quote in front of forrest](img/Inspirational%20Quote%20Picture.png)
 [SOURCE](https://www.brainyquote.com/quotes/ted_turner_384962)
 
-LIGHTHOUSE SCORE
+LIGHTHOUSE SCORE Lab 2
 ![Lighthouse Score](img/Lighthouse%20Score.png "Lighthouse Score")
+
+LIGHTHOUSE SCORE Lab 3
+![Lighthouse Score Lab 3](img/Lighthouse%20Score%20Lab%203.png "Lighthouse Score 3")
 
