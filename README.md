@@ -27,5 +27,5 @@ LIGHTHOUSE SCORE Lab 2
 ![Lighthouse Score](img/Lighthouse%20Score.png "Lighthouse Score")
 
 LIGHTHOUSE SCORE Lab 3
-![Lighthouse Score Lab 3](img/Lighthouse%20Score%20Lab%203.png "Lighthouse Score 3")
+![Lighthouse Score Lab 3](img/Lighthouse-Score-3.png "Lighthouse Score 3")
 
