@@ -38,15 +38,17 @@ const gamerQuestion = ()=> {
 //console.log(correctAnswers);
 }
 
-let catGuess = prompt('Do I own a cat').toLowerCase();
-//console.log(catGuess);
-if (catGuess === 'yes' || catGuess === 'y') {
-  alert('Correct, his name is Winston!');
-  correctAnswers += 1;
-} else if (catGuess === 'no' || catGuess === 'n') {
-  alert('Sorry! my cat is named Winston!');
-} else {
-  alert('Please choose yes or no!');
+const catGuess = ()=> {
+  let catGuess = prompt('Do I own a cat').toLowerCase();
+  //console.log(catGuess);
+  if (catGuess === 'yes' || catGuess === 'y') {
+    alert('Correct, his name is Winston!');
+    correctAnswers += 1;
+  } else if (catGuess === 'no' || catGuess === 'n') {
+    alert('Sorry! my cat is named Winston!');
+  } else {
+    alert('Please choose yes or no!');
+  }
 }
 
 let washingtonGuess = prompt('Am I from Washington?').toLowerCase();
