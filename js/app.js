@@ -1,23 +1,28 @@
 'use strict';
 
+// Global variable
+let correctAnswers = 0;
+
+// get the user name from a prompt
 const getUserName = ()=> {
   let username = prompt('Hello, what is your name?');
   alert('Welcome to my page, ' + username + '!');
 }
 
-let correctAnswers = 0;
 
-let guacGuess = prompt('Do I like guacamole?').toLowerCase();
-//console.log(guacGuess);
-if (guacGuess === 'yes' || guacGuess === 'y') {
-  alert('Correct, I like guac!');
-  correctAnswers += 1;
-} else if (guacGuess === 'no' || guacGuess === 'n') {
-  alert('Sorry! I do like guac!');
-} else {
-  alert('Please choose yes or no!');
+const guacQuestion = () => {
+  let guacGuess = prompt('Do I like guacamole?').toLowerCase();
+  //console.log(guacGuess);
+  if (guacGuess === 'yes' || guacGuess === 'y') {
+    alert('Correct, I like guac!');
+    correctAnswers += 1;
+  } else if (guacGuess === 'no' || guacGuess === 'n') {
+    alert('Sorry! I do like guac!');
+  } else {
+    alert('Please choose yes or no!');
+  }
+  //console.log(correctAnswers);
 }
-//console.log(correctAnswers);
 
 let gamerGuess = prompt('Do I like to play videogames?').toLowerCase();
 //console.log(gamerGuess);
