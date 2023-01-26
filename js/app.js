@@ -99,36 +99,38 @@ const numberQuestion = ()=> {
   }
 }
 
-const correctAnswersArr = ['japan', 'korea', 'thailand'];
-let attempts = 6;
-let isCorrect = false;
-while (attempts > 0 && isCorrect === false) {
-  if (attempts === 0) {
-    alert('Sorry Out of guesses!');
-    break;
-  }
-  let userCountryGuess = prompt('Which foreign country have I visited?').toLowerCase();
-  for (let j = 0; j < correctAnswersArr.length; j++) {
-    if (userCountryGuess === correctAnswersArr[j]) {
-      alert('Correct!');
-      isCorrect = true;
-      correctAnswers++;
+const countryQuestion = ()=> {
+  const correctAnswersArr = ['japan', 'korea', 'thailand'];
+  let attempts = 6;
+  let isCorrect = false;
+  while (attempts > 0 && isCorrect === false) {
+    if (attempts === 0) {
+      alert('Sorry Out of guesses!');
       break;
     }
+    let userCountryGuess = prompt('Which foreign country have I visited?').toLowerCase();
+    for (let j = 0; j < correctAnswersArr.length; j++) {
+      if (userCountryGuess === correctAnswersArr[j]) {
+        alert('Correct!');
+        isCorrect = true;
+        correctAnswers++;
+        break;
+      }
+    }
+    attempts--;
+    if (isCorrect === false) {
+      alert(`You have ${attempts} attempts left!`);
+    }
   }
-  attempts--;
-  if (isCorrect === false) {
-    alert(`You have ${attempts} attempts left!`);
+  alert('The countries I have been to are ' + correctAnswersArr[0] + ", " + correctAnswersArr[1] + ", and " + correctAnswersArr[2]);
+  
+  if (correctAnswers === 1) {
+    alert('Congratulations ' + username + ', you got 1 correct!');
+  } else if (correctAnswers === 0) {
+    alert('Sorry, ' + username + ' you got none right :(');
+  } else {
+    alert(`Congragulations ${username}! You got ${correctAnswers} out of 7 correct answers!`);
   }
-}
-alert('The countries I have been to are ' + correctAnswersArr[0] + ", " + correctAnswersArr[1] + ", and " + correctAnswersArr[2]);
-
-if (correctAnswers === 1) {
-  alert('Congratulations ' + username + ', you got 1 correct!');
-} else if (correctAnswers === 0) {
-  alert('Sorry, ' + username + ' you got none right :(');
-} else {
-  alert(`Congragulations ${username}! You got ${correctAnswers} out of 7 correct answers!`);
 }
 
 /*
