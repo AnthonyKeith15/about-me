@@ -133,6 +133,14 @@ const countryQuestion = ()=> {
   }
 }
 
+getUserName()
+guacQuestion()
+gamerQuestion()
+catGuess()
+washingtonQuestion()
+animeGuess()
+numberQuestion()
+countryQuestion()
 /*
 To Do List:
 Create Array To hold Questions and Answers (Optional)
