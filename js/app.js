@@ -105,7 +105,7 @@ while (attempts > 0 && isCorrect === false) {
     alert(`You have ${attempts} attempts left!`);
   }
 }
-alert('The countries I have been to are ' + correctAnswersArr[0]+ ", " + correctAnswersArr[1]+ ", and " + correctAnswersArr[2]);
+alert('The countries I have been to are ' + correctAnswersArr[0] + ", " + correctAnswersArr[1] + ", and " + correctAnswersArr[2]);
 
 if (correctAnswers === 1) {
   alert('Congratulations ' + username + ', you got 1 correct!');
