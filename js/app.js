@@ -51,15 +51,17 @@ const catGuess = ()=> {
   }
 }
 
-let washingtonGuess = prompt('Am I from Washington?').toLowerCase();
-//console.log(washingtonGuess);
-if (washingtonGuess === 'yes' || washingtonGuess === 'y') {
-  alert('Correct, I am from Bremerton, WA');
-  correctAnswers += 1;
-} else if (washingtonGuess === 'no' || washingtonGuess === 'n') {
-  alert('Incorrect, I am from Bremerton, WA');
-} else {
-  alert('Please choose yes or no!');
+const washingtonQuestion = () => {
+  let washingtonGuess = prompt('Am I from Washington?').toLowerCase();
+  //console.log(washingtonGuess);
+  if (washingtonGuess === 'yes' || washingtonGuess === 'y') {
+    alert('Correct, I am from Bremerton, WA');
+    correctAnswers += 1;
+  } else if (washingtonGuess === 'no' || washingtonGuess === 'n') {
+    alert('Incorrect, I am from Bremerton, WA');
+  } else {
+    alert('Please choose yes or no!');
+  }
 }
 
 let animeGuess = prompt('Do I like anime?').toLowerCase();
