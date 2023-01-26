@@ -1,7 +1,9 @@
 'use strict';
 
-let username = prompt('Hello, what is your name?');
-alert('Welcome to my page, ' + username + '!');
+const getUserName = ()=> {
+  let username = prompt('Hello, what is your name?');
+  alert('Welcome to my page, ' + username + '!');
+}
 
 let correctAnswers = 0;
 
