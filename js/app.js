@@ -77,23 +77,25 @@ const animeGuess = () => {
   }
 }
 
-let magicNumber = Math.ceil(Math.random() * 20);
-//console.log(magicNumber);
-for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
-  let userNumberGuess = prompt('Choose a number between 1-20');
-  let userGuessInt = +userNumberGuess;
-  if (userGuessInt === magicNumber) {
-    alert('Congrats! You Guessed Correctly');
-    correctAnswers++;
-    break;
-  } else if (userGuessInt < magicNumber && guessesRemaining > 0) {
-    alert(`Your guess is too low, you have ${guessesRemaining} guesses remaining!`);
-  } else if (userGuessInt > magicNumber && guessesRemaining > 0) {
-    alert(`Your guess is too high, you have ${guessesRemaining} guesses remaining!`);
-  }
-  if (guessesRemaining === 0) {
-    alert(`Sorry Out Of Guesses, the correct number was ${magicNumber}`);
-    break;
+const numberQuestion = ()=> {
+  let magicNumber = Math.ceil(Math.random() * 20);
+  //console.log(magicNumber);
+  for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
+    let userNumberGuess = prompt('Choose a number between 1-20');
+    let userGuessInt = +userNumberGuess;
+    if (userGuessInt === magicNumber) {
+      alert('Congrats! You Guessed Correctly');
+      correctAnswers++;
+      break;
+    } else if (userGuessInt < magicNumber && guessesRemaining > 0) {
+      alert(`Your guess is too low, you have ${guessesRemaining} guesses remaining!`);
+    } else if (userGuessInt > magicNumber && guessesRemaining > 0) {
+      alert(`Your guess is too high, you have ${guessesRemaining} guesses remaining!`);
+    }
+    if (guessesRemaining === 0) {
+      alert(`Sorry Out Of Guesses, the correct number was ${magicNumber}`);
+      break;
+    }
   }
 }
 
