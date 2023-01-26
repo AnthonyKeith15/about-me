@@ -64,15 +64,17 @@ const washingtonQuestion = () => {
   }
 }
 
-let animeGuess = prompt('Do I like anime?').toLowerCase();
-//console.log(animeGuess);
-if (animeGuess === 'yes' || animeGuess === 'y') {
-  alert('Correct, I like anime!');
-  correctAnswers += 1;
-} else if (animeGuess === 'no' || animeGuess === 'n') {
-  alert('Sorry! I\'m a huge fan!');
-} else {
-  alert('Please choose yes or no!');
+const animeGuess = () => {
+  let animeGuess = prompt('Do I like anime?').toLowerCase();
+  //console.log(animeGuess);
+  if (animeGuess === 'yes' || animeGuess === 'y') {
+    alert('Correct, I like anime!');
+    correctAnswers += 1;
+  } else if (animeGuess === 'no' || animeGuess === 'n') {
+    alert('Sorry! I\'m a huge fan!');
+  } else {
+    alert('Please choose yes or no!');
+  }
 }
 
 let magicNumber = Math.ceil(Math.random() * 20);
