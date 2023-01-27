@@ -4,7 +4,7 @@
 let correctAnswers = 0;
 
 // get the user name from a prompt
-const getUserName = ()=> {
+const getUserName = () => {
   let username = prompt('Hello, what is your name?');
   alert('Welcome to my page, ' + username + '!');
 }
@@ -24,7 +24,7 @@ const guacQuestion = () => {
   //console.log(correctAnswers);
 }
 
-const gamerQuestion = ()=> {
+const gamerQuestion = () => {
   let gamerGuess = prompt('Do I like to play videogames?').toLowerCase();
   //console.log(gamerGuess);
   if (gamerGuess === 'yes' || gamerGuess === 'y') {
@@ -35,10 +35,10 @@ const gamerQuestion = ()=> {
   } else {
     alert('Please choose yes or no!');
   }
-//console.log(correctAnswers);
+  //console.log(correctAnswers);
 }
 
-const catGuess = ()=> {
+const catGuess = () => {
   let catGuess = prompt('Do I own a cat').toLowerCase();
   //console.log(catGuess);
   if (catGuess === 'yes' || catGuess === 'y') {
@@ -77,7 +77,7 @@ const animeGuess = () => {
   }
 }
 
-const numberQuestion = ()=> {
+const numberQuestion = () => {
   let magicNumber = Math.ceil(Math.random() * 20);
   //console.log(magicNumber);
   for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
@@ -99,7 +99,7 @@ const numberQuestion = ()=> {
   }
 }
 
-const countryQuestion = ()=> {
+const countryQuestion = () => {
   const correctAnswersArr = ['japan', 'korea', 'thailand'];
   let attempts = 6;
   let isCorrect = false;
@@ -123,7 +123,7 @@ const countryQuestion = ()=> {
     }
   }
   alert('The countries I have been to are ' + correctAnswersArr[0] + ", " + correctAnswersArr[1] + ", and " + correctAnswersArr[2]);
-  
+
   if (correctAnswers === 1) {
     alert('Congratulations ' + username + ', you got 1 correct!');
   } else if (correctAnswers === 0) {
@@ -131,16 +131,16 @@ const countryQuestion = ()=> {
   } else {
     alert(`Congragulations ${username}! You got ${correctAnswers} out of 7 correct answers!`);
   }
-}
+};
 
-getUserName()
-guacQuestion()
-gamerQuestion()
-catGuess()
-washingtonQuestion()
-animeGuess()
-numberQuestion()
-countryQuestion()
+getUserName();
+guacQuestion();
+gamerQuestion();
+catGuess();
+washingtonQuestion();
+animeGuess();
+numberQuestion();
+countryQuestion();
 /*
 To Do List:
 Create Array To hold Questions and Answers (Optional)
