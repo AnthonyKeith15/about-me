@@ -12,7 +12,6 @@ const getUserName = () => {
 
 const guacQuestion = () => {
   let guacGuess = prompt('Do I like guacamole?').toLowerCase();
-  //console.log(guacGuess);
   if (guacGuess === 'yes' || guacGuess === 'y') {
     alert('Correct, I like guac!');
     correctAnswers += 1;
@@ -21,12 +20,10 @@ const guacQuestion = () => {
   } else {
     alert('Please choose yes or no!');
   }
-  //console.log(correctAnswers);
 }
 
 const gamerQuestion = () => {
   let gamerGuess = prompt('Do I like to play videogames?').toLowerCase();
-  //console.log(gamerGuess);
   if (gamerGuess === 'yes' || gamerGuess === 'y') {
     alert('Correct, I like to play videogames!');
     correctAnswers += 1;
@@ -35,12 +32,10 @@ const gamerQuestion = () => {
   } else {
     alert('Please choose yes or no!');
   }
-  //console.log(correctAnswers);
 }
 
 const catGuess = () => {
   let catGuess = prompt('Do I own a cat').toLowerCase();
-  //console.log(catGuess);
   if (catGuess === 'yes' || catGuess === 'y') {
     alert('Correct, his name is Winston!');
     correctAnswers += 1;
@@ -53,7 +48,6 @@ const catGuess = () => {
 
 const washingtonQuestion = () => {
   let washingtonGuess = prompt('Am I from Washington?').toLowerCase();
-  //console.log(washingtonGuess);
   if (washingtonGuess === 'yes' || washingtonGuess === 'y') {
     alert('Correct, I am from Bremerton, WA');
     correctAnswers += 1;
@@ -66,7 +60,6 @@ const washingtonQuestion = () => {
 
 const animeGuess = () => {
   let animeGuess = prompt('Do I like anime?').toLowerCase();
-  //console.log(animeGuess);
   if (animeGuess === 'yes' || animeGuess === 'y') {
     alert('Correct, I like anime!');
     correctAnswers += 1;
@@ -79,7 +72,6 @@ const animeGuess = () => {
 
 const numberQuestion = () => {
   let magicNumber = Math.ceil(Math.random() * 20);
-  //console.log(magicNumber);
   for (let guessesRemaining = 3; guessesRemaining >= 0; guessesRemaining--) {
     let userNumberGuess = prompt('Choose a number between 1-20');
     let userGuessInt = +userNumberGuess;
@@ -141,7 +133,3 @@ washingtonQuestion();
 animeGuess();
 numberQuestion();
 countryQuestion();
-/*
-To Do List:
-Create Array To hold Questions and Answers (Optional)
-*/
