@@ -1,9 +1,39 @@
-h1 {
-  font-size: 9rem;
+* {
+  box-sizing: border-box;
+  background-color: palegoldenrod;
+  justify-content: center;
 }
+
+h1 {
+  font-size: 4rem;
+}
+
+h2:hover {
+  translate: 50px;
+}
+
+h1:hover{
+  color: blue
+}
+
 ul li {
   list-style-type: disc;
 }
 ol li {
   list-style: decimal;
+}
+
+li {
+  margin: 5px 5px;
+}
+
+li:hover {
+  background-color: gray;
+  translate: 10px;
+  width: 30%;
+  cursor: none;
+}
+
+p {
+  color: blue;
 }
